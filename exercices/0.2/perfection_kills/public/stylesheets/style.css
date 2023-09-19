@@ -1,0 +1,175 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+html,
+body {
+  height:100%
+}
+#outer-wrapper {
+  min-height:100%;
+  margin-bottom:-40px
+}
+#outer-wrapper:after {
+  content:"";
+  display:block
+}
+.footer,
+#outer-wrapper:after {
+  height:40px
+}
+@media screen and (max-width: 1000px) {
+  #wrapper {
+    margin:20px;
+    width:auto
+  }
+  .footer {
+    line-height:30px;
+    padding-top:10px
+  }
+  .footer .wrapper {
+    margin:0 20px;
+    width:auto
+  }
+  .footer .donations {
+    display:block;
+    float:none
+  }
+  .num-words {
+    display:block;
+    float:none !important;
+    margin-left:0 !important
+  }
+  .date {
+    display:block;
+    margin-left:0 !important
+  }
+  .popular:before {
+    left:0 !important
+  }
+  .new:before {
+    left:15px !important
+  }
+  .post-date,
+  .post-num-words {
+    float:none !important
+  }
+  .post-date:after {
+    content:''
+  }
+  .post-date:before {
+    content:'\b7'
+  }
+  .back-to-front {
+    left:0;
+    top:-30px
+  }
+  .footer,
+  #outer-wrapper:after {
+    height:60px
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .filter {
+    position:static !important
+  }
+  .posts .popular:before {
+    content:'popular';
+    position:static !important
+  }
+  .posts .new:before {
+    content:'new';
+    position:static !important
+  }
+  .back-to-front {
+    display:none
+  }
+  #carbonads-container {
+    float:none;
+    margin-left:0
+  }
+  .blog-slogan {
+    margin-bottom:10px
+  }
+}
+.innertext code {
+  background:none;
+  padding:0
+}
+.answers {
+  list-style:none;
+  padding-left:20px;
+  margin-bottom:40px
+}
+.quiz {
+  padding-left:0
+}
+#quiz-result {
+  background:#efe;
+  padding:1em;
+  border:1px solid #afa
+}
+#carbonads * {
+  margin:initial;
+  padding:initial
+}
+#carbonads {
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Helvetica, Arial, sans-serif
+}
+#carbonads {
+  display:flex;
+  max-width:330px;
+  background-color:#fafafa;
+  box-shadow:0 1px 4px 1px rgba(0,0,0,0.1);
+  z-index:100
+}
+#carbonads a {
+  color:inherit;
+  text-decoration:none
+}
+#carbonads a:hover {
+  color:inherit
+}
+#carbonads span {
+  position:relative;
+  display:block;
+  overflow:hidden
+}
+#carbonads .carbon-wrap {
+  display:flex
+}
+#carbonads .carbon-img {
+  display:block;
+  margin:0;
+  line-height:1
+}
+#carbonads .carbon-img img {
+  display:block
+}
+#carbonads .carbon-text {
+  font-size:13px;
+  padding:10px;
+  margin-bottom:16px;
+  line-height:1.5;
+  text-align:left
+}
+#carbonads .carbon-poweredby {
+  display:block;
+  padding:6px 8px;
+  background:#f1f1f2;
+  text-align:center;
+  text-transform:uppercase;
+  letter-spacing:0.5px;
+  font-weight:600;
+  font-size:8px;
+  line-height:1;
+  border-top-left-radius:3px;
+  position:absolute;
+  bottom:0;
+  right:0
+}
+
