@@ -26,7 +26,7 @@ const CATALOGUE = [
 ]
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
+router.get('/', function(req, res) {
   console.log('GET /myMovies');
   res.json(CATALOGUE);
 });
