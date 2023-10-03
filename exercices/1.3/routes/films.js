@@ -36,7 +36,7 @@ router.get('/', (req, res) => {
   if (typeof minimumFilmDuration !== 'number' || minimumFilmDuration <= 0)
     return res.json('Wrong minimum duration'); // bad practise (will be improved in exercise 1.5)
 
-  const filmsReachingMinimumDuration = films.filter(
+  const filmsReachingMinimumDuration = CATALOGUE.filter(
     (film) => film.duration >= minimumFilmDuration
   );
   return res.json(filmsReachingMinimumDuration);
