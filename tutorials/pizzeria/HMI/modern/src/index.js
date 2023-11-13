@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // Custom styles
 import './stylesheets/main.css';
 // Import Animate.css
+// eslint-disable-next-line import/no-extraneous-dependencies
 import 'animate.css';
 
 const body = document.querySelector('body');
