@@ -6,21 +6,20 @@ import skinCare from './img/pexels-john-tekeridis-3212164.jpg';
 renderImageFromString();
 
 function renderImageFromString() {
+  const leftSideAsString = getLeftSideAsString();
 
-    const leftSideAsString = getLeftSideAsString();
+  const main = document.querySelector('main');
 
-    const main = document.querySelector('main');
-
-    main.innerHTML += leftSideAsString;
+  main.innerHTML += leftSideAsString;
 }
 
 function getLeftSideAsString() {
-    const leftSide = getAllLeftSide();
-    return leftSide;
+  const leftSide = getAllLeftSide();
+  return leftSide;
 }
 
 function getAllLeftSide() {
-    const leftSide = `
+  const leftSide = `
     <div class="container">
         <div class="row">
           <div class="col-md-6">
@@ -34,10 +33,10 @@ function getAllLeftSide() {
         </div>
       </div>
       `;
-      return leftSide;
+  return leftSide;
 }
 
-const btn1 = document.querySelector(".event");
+const btn1 = document.querySelector('.event');
 
 btn1.addEventListener('click', () => {
   const main = document.querySelector('main');
@@ -56,7 +55,7 @@ btn1.addEventListener('click', () => {
 </div>
     `;
   main.innerHTML = about;
-  const btn2 = document.querySelector(".back");
+  const btn2 = document.querySelector('.back');
   btn2.addEventListener('click', () => {
     const homepage = `
     <div class="container">
@@ -72,7 +71,6 @@ btn1.addEventListener('click', () => {
         </div>
       </div>
       `;
-      main.innerHTML=homepage;
+    main.innerHTML = homepage;
   });
 });
-
